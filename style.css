@@ -1,0 +1,302 @@
+body{
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 0 20px;
+    font-family: Arial;
+}
+.entete{
+    background-color: rgb(216, 5, 76);
+    padding: 8px 25px;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.logo img{
+    width: 100px;
+    height: 80px;  
+} 
+.nom{
+    display: flex;
+    flex-direction: column;  
+    font-family: 'Times New Roman' ;
+    color: black;
+}
+.import{
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.important{
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 3px;
+    opacity: 0.9;
+}
+.rech{
+    background-color: white;
+    display: flex;
+    transition: all 0.3s ease;
+    width: 300px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    align-items: center;
+}
+.rech input{
+    border: none;
+    padding: 6px;
+    flex: 1;
+    outline: none;
+     
+}
+.rech button{
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+}
+.rech:hover{
+    background: #ffe6ec;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0 0 0 0.2);
+}
+.menu{
+    display: flex;
+    gap: 15px;
+}
+.menu a{
+    color: white;
+    position: relative;
+    text-decoration: none;
+    padding: 6px 12px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    border-radius: 20px;
+}
+.menu a::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+.menu a:hover{
+    transform: scale(1.08);
+    background: white;
+    color: #b3002d;
+}
+.nav a:hover::before{
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+.nav a:active{
+    transform: scale(0.95);
+}
+.Produits{
+    display: flex;
+    gap: 40px;
+    padding: 60px;
+    justify-content: center;
+    margin: 0px;
+    align-items: center;
+}
+.box1{
+    width: 50%;
+    align-content: center;
+}
+.principale{
+    width: 100%;
+    border-radius: 15px;
+}
+.sousImg{
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.sousImg img{
+    width: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-content: center;
+}
+.sousImg img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.Info{
+    width: 50%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+.partie1{
+    color: gray;
+}
+.partie2 .nouveau{
+    font-weight: bold;
+    font-size: 20px;
+}
+.partie2 .initial{
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: gray;
+}
+.partie2 .rabais{
+    margin-left: 10px;
+    color: green;
+}
+.description{
+    color: #555;
+}
+.Avis{
+    margin: 10px 0;
+}
+.quantite{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+.quantite button{
+    padding: 5px 10px;
+}
+.taille{
+    margin-top: 15px;
+}
+.Selection{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.option{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.tail{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.tail:hover{
+    transform: scale(1.1);
+    border-color: #1f2a3a;
+}
+
+.tail.selected{
+    background: #1f2a3a;
+    color: white;
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.total{
+    font-weight: bold;
+    margin-top: 5px;
+}
+.panier{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+.Ajout{
+    width: 35%;
+    padding: 12px;
+    background: #9c0128;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Ajout:hover{
+    transform: scale(1.05);
+}
+.Retrait{
+    width: 35%;
+    padding: 12px;
+    background: #9c0128;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Retrait:hover{
+    transform: scale(1.05);
+}
+.article{
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.details{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.exemple{
+    flex: 1;
+    background: #f3f3f3;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.exemple .emoji{
+    font-size: 22px;
+    opacity: 0.6;
+}
+.exemple .titre{
+    font-weight: bold;
+    margin: 5px 0;
+}
+.exemple .temps{
+    font-size: 13px;
+    color: gray;
+}
+.exemple:hover{
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.Offre{
+    margin-top: 20px;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+} 
+.Inscription{
+    padding: 10px;
+    background: #9c0128;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.Inscription:hover{
+    transform: scale(1.08);
+}
+.footer{
+    text-align: center;
+    padding: 15px;
+    background: rgb(216, 5, 76);
+    color: white;
+    margin-top: 40px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page-Produit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="entete">
+        <div class="logo">
+            <img src="Logo.PNG" alt="Logo de la page">
+            <div class="nom">
+                <span class="import">ORIGINALS</span>
+                <span class="important">WIGS</span>
+            </div>
+        </div>
+
+        <div class="rech">
+            <input type="text" placeholder="Rechercher..." />
+            <button>🔍</button>
+        </div>
+
+        <nav class="menu">
+            <a href="#">Acceuil</a>
+            <a href="#">Boutique</a>
+            <a href="#">Nouveautés</a>
+            <a href="#">Marques</a>
+            <a href="#">A propos</a> 
+            <a href="#">Contacts</a>
+        </nav>
+    </header>
+
+    <section class="Produits">
+        <div class="box1">
+            <img src="Perru1.PNG" alt="Perruque de présentation" class="principale" onclick="swapImage(this)">
+            <div class="sousImg">
+                <img src="Perru2.PNG" alt="Premier angle" onclick="swapImage(this)">
+                <img src="Perru3.JPG" alt="Deuxième angle" onclick="swapImage(this)">
+                <img src="Perru4.JPG" alt="Troisième angle" onclick="swapImage(this)">
+            </div>
+        </div>
+
+        <div class="Info">
+            <h1>Perruque Lace Front Brésilienne</h1>
+            <p class="partie1">Ondulée naturelle "Elégant Silk"</p>
+            <div class="partie2">
+                <span class="nouveau">50 000 FCFA</span>
+                <span class="initial">75 000 FCFA</span>
+                <span class="rabais">-33%</span>
+            </div>
+
+            <p class="description">
+                Sublimez votre beauté avec cette perruque en cheveux 100% humains, à la fois douce et soyeuse,
+                avec une finition front pour un effet invisible.
+                Facile à coiffer, son rendu naturel et sa finition impéccable 
+                en font un choix parfait pour un look chic et sophistiqué au quotidien.
+            </p>
+
+            <div class="Avis">
+                ⭐⭐⭐⭐⭐
+                <span>Note 4.9/5 (260 avis)</span>
+            </div>
+
+            <div class="quantite">
+                <button onclick="diminu()">-</button>
+                <span id="nombre">1</span>
+                <button onclick="augmente()">+</button>
+            </div>
+
+            <div class="taille">
+                <p class="Selection">Sélectionner une taille</p>
+                <div class="option">
+                    <span class="tail" onclick="selectTaille(this)">15"</span>
+                    <span class="tail" onclick="selectTaille(this)">20"</span>
+                    <span class="tail" onclick="selectTaille(this)">25"</span>
+                </div>
+                <p class="total">Total: <span id="prixTotal">50 000 FCFA</span></p>
+            </div>
+
+            <div class="panier">
+                <button class="Ajout" onclick="Ajouter()">🛒 Ajouter au panier</button>
+                <button class="Retrait" onclick="Retirer()">❌ Retirer du panier</button>
+                <div class="article">🛒 Panier(<span id="articles">0</span>)</div>
+            </div>
+            
+            <div class="details">
+                <div class="exemple">
+                    <div class="emoji">🚚</div>
+                    <div class="titre">Livraison</div>
+                    <div class="temps">2-3 jours</div>
+                </div>
+
+                <div class="exemple">
+                    <div class="emoji">✔</div>
+                    <div class="titre">Garantie</div>
+                    <div class="temps">12-24 mois</div>
+                </div>
+                
+                <div class="exemple">
+                    <div class="emoji">🛡</div>
+                    <div class="titre">Retour</div>
+                    <div class="temps">30 jours</div>
+                </div>
+            </div>
+
+            <div class="Offre">
+                <h3>Offre à durée limitée</h3>
+
+                <p>Bénéficiez de 10% de réduction supplémentaire sur votre
+                    premier achat en vous inscrivant à notre newletter.
+                </p>
+
+                <button class="Inscription">S'inscrire maintenant</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        @2026  Douala - Cameroun  Politique de confidentialité.
+    </footer>
+
+    <script src="script.js"></script> 
+
+</body>
+</html>
